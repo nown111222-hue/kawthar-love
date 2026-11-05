@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#24111f">
+<title>إلى كوثر، من عبدالرحمن ❤️</title>
+<style>
+:root{
+  --rose:#ff8eae;--pink:#ffd2df;--cream:#fff4ed;--wine:#351827;
+  --deep:#180f1c;--gold:#f6d69a;--muted:#f7dce5;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;min-height:100vh;color:var(--cream);
+ font-family:"Segoe UI",Tahoma,Arial,sans-serif;
+ background:
+ radial-gradient(ellipse at 20% 10%,rgba(139,54,100,.35),transparent 38%),
+ radial-gradient(ellipse at 85% 75%,rgba(81,40,85,.45),transparent 40%),
+ linear-gradient(145deg,#160e1b,#291424 52%,#130e1b);
+ overflow-x:hidden;
+}
+button{font:inherit;cursor:pointer}
+#stars,.petals{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.star{position:absolute;width:2px;height:2px;border-radius:50%;background:#ffe7ed;opacity:.5;animation:twinkle 3s infinite ease-in-out}
+@keyframes twinkle{50%{opacity:1;transform:scale(1.8)}}
+.petal{position:absolute;top:-12vh;width:13px;height:19px;border-radius:100% 0 100% 0;background:linear-gradient(135deg,#ffd8e3,#df648d);opacity:.55;animation:fall linear infinite}
+@keyframes fall{to{transform:translate3d(70px,115vh,0) rotate(620deg)}}
+.wrap{position:relative;z-index:1;width:min(100% - 28px,850px);margin:auto;padding:22px 0 52px}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand{font-size:.83rem;letter-spacing:.04em;color:#f6c6d5}
+.sound{
+ border:1px solid #ffffff35;background:#ffffff0c;color:#ffe5ed;border-radius:99px;
+ padding:9px 13px;font-size:.82rem;backdrop-filter:blur(8px)
+}
+.sound:hover,.btn:hover,.small-btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.hero{min-height:78vh;display:grid;place-items:center;text-align:center;padding:48px 8px 35px}
+.hero-inner{max-width:650px}
+.eyebrow{color:var(--gold);font-size:.9rem;letter-spacing:.12em;margin-bottom:16px}
+h1{font-family:Georgia,"Times New Roman",serif;font-weight:500;font-size:clamp(2.5rem,9vw,5.6rem);line-height:1.12;margin:0;color:#ffe3eb;text-shadow:0 0 35px #ff7da455}
+.subtitle{font-size:clamp(1rem,3vw,1.2rem);line-height:2;color:#f4dce4;max-width:520px;margin:20px auto 27px}
+.heart-wrap{height:135px;display:grid;place-items:center;margin:6px 0 18px}
+.big-heart{font-size:92px;filter:drop-shadow(0 0 24px #ff5b91aa);animation:heartbeat 1.55s infinite;display:inline-block}
+@keyframes heartbeat{0%,100%{transform:scale(1)}12%{transform:scale(1.12)}24%{transform:scale(1)}36%{transform:scale(1.07)}}
+.btn{
+ border:0;border-radius:999px;padding:14px 25px;color:#351827;font-weight:700;
+ background:linear-gradient(110deg,#ffe1e8,#f7b6ca 55%,#f6d69a);
+ box-shadow:0 10px 35px #e86c9b35;transition:.2s
+}
+.btn.secondary{background:#ffffff12;color:#ffe5ed;border:1px solid #ffffff3b;box-shadow:none}
+.hint{font-size:.8rem;color:#d9b9c8;margin-top:14px}
+.section{margin:34px 0;padding:clamp(20px,5vw,38px);border:1px solid #ffffff20;border-radius:28px;background:linear-gradient(145deg,#ffffff0d,#ffffff05);backdrop-filter:blur(12px);box-shadow:0 20px 70px #00000020}
+.section h2{font-size:clamp(1.5rem,5vw,2.15rem);font-weight:500;color:#ffe0e9;margin:0 0 12px}
+.lead{color:#f0cfda;line-height:2;margin:0 0 20px}
+.center{text-align:center}
+.flower-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.flower{
+ min-height:145px;border:1px solid #ffffff22;border-radius:20px;background:#ffffff0a;color:#ffe7ee;
+ padding:17px 12px;transition:.2s;text-align:center
+}
+.flower .emoji{font-size:2.5rem;display:block;margin-bottom:8px;filter:drop-shadow(0 4px 12px #f67da566)}
+.flower strong{display:block;font-size:1rem;margin-bottom:5px}
+.flower small{color:#d8b9c7}
+.flower:hover{background:#ffffff16;transform:translateY(-3px)}
+.note{display:none;margin-top:18px;padding:20px;border-radius:18px;background:#fce4eb;color:#482338;line-height:2;animation:rise .35s ease}
+.note.show{display:block}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.promise-list{display:grid;gap:12px;margin-top:20px}
+.promise{display:flex;align-items:flex-start;gap:12px;padding:14px 16px;border-radius:16px;background:#ffffff0b;color:#f8e2e9;line-height:1.8}
+.promise span{font-size:1.25rem}
+.envelope-area{display:grid;place-items:center;padding:15px 0 5px}
+.envelope{position:relative;width:min(290px,78vw);height:190px;border:0;background:transparent;perspective:900px}
+.env-back{position:absolute;inset:22px 0 0;background:#e9a8bb;border-radius:10px;box-shadow:0 15px 40px #0005}
+.env-front{position:absolute;inset:22px 0 0;background:linear-gradient(145deg,#f5c2cf,#d77d9b);clip-path:polygon(0 0,50% 58%,100% 0,100% 100%,0 100%);border-radius:10px}
+.env-flap{position:absolute;inset:22px 0 auto;height:120px;background:#ffd9e2;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .8s;z-index:3}
+.seal{position:absolute;z-index:4;left:50%;top:83px;transform:translateX(-50%);font-size:30px;transition:.4s}
+.envelope.open .env-flap{transform:rotateX(180deg);z-index:0}
+.envelope.open .seal{opacity:0;transform:translateX(-50%) scale(.5)}
+.letter{display:none;text-align:right;line-height:2.15;color:#4b2638;background:#fff0f3;border-radius:20px;padding:23px;margin-top:15px;white-space:pre-line;box-shadow:0 15px 45px #0003}
+.letter.show{display:block;animation:rise .5s ease}
+.signature{font-family:Georgia,serif;font-size:1.2rem;color:#9d4168;text-align:left;margin-top:20px}
+.final-heart{font-size:70px;animation:heartbeat 1.5s infinite;display:block;margin:10px}
+.footer{text-align:center;color:#cdaebc;font-size:.82rem;padding:28px 8px 8px}
+.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);background:#ffe7ed;color:#492237;padding:12px 18px;border-radius:30px;opacity:0;pointer-events:none;transition:.3s;z-index:5;white-space:nowrap}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(min-width:650px){.flower-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.hero{min-height:82vh}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="stars"></div><div class="petals" id="petals"></div>
+<div class="wrap">
+ <header class="topbar">
+  <div class="brand">✦ رسالة صغيرة من قلب كبير ✦</div>
+  <button class="sound" id="soundBtn" type="button" aria-pressed="false">♫ شغّلي موسيقى هادئة</button>
+ </header>
+
+ <main>
+  <section class="hero" id="home">
+   <div class="hero-inner">
+    <div class="eyebrow">إِلَى أَمِيرَتِي كَوْثَر</div>
+    <h1>أنتِ حكاية<br>قلبي الجميلة</h1>
+    <p class="subtitle">هذه المساحة الصغيرة صنعتها لكِ، لأقول لكِ بهدوء شيئًا قد لا تكفيه كل الكلمات: أنتِ غالية، ومحبوبة، ولكِ في قلبي مكان لا يشبهه أحد.</p>
+    <div class="heart-wrap"><span class="big-heart">❤️</span></div>
+    <button class="btn" id="beginBtn" type="button">افتحي رسالتي يا حبيبتي</button>
+    <div class="hint">خذي وقتك… كل شيء هنا كُتب لكِ بحب</div>
+   </div>
+  </section>
+
+  <section class="section center" id="flowers">
+   <div class="eyebrow">أشياء أريدك أن تتذكريها</div>
+   <h2>كل وردة تخبّئ لكِ كلمة ❤️</h2>
+   <p class="lead">اختاري وردة، وستجدين بداخلها شيئًا من قلبي.</p>
+   <div class="flower-grid">
+    <button class="flower" data-note="أحب صوتك، حتى في أبسط الأحاديث. أحب أن أسمع تفاصيل يومك، وضحكتك، وحكاياتك الصغيرة. وجودك يجعل للحظات العادية طعمًا أجمل."><span class="emoji">🌹</span><strong>صوتك</strong><small>اضغطي لتفتحي الوردة</small></button>
+    <button class="flower" data-note="أنتِ لستِ وقت فراغ، ولا مكالمة عابرة. أنتِ إنسانة أحبها وأقدّرها، وأفرح بوجودها في حياتي."><span class="emoji">🌷</span><strong>مكانتك</strong><small>كلمة من قلبي</small></button>
+    <button class="flower" data-note="إذا انشغلت أو قصّرت، فهذا لا يغيّر حبي لكِ. لكنني أفهم أن الحب يحتاج اهتمامًا يظهر، وأريد أن أكون أفضل في إظهاره لكِ."><span class="emoji">🌸</span><strong>اطمئني</strong><small>افتحي رسالتك</small></button>
+    <button class="flower" data-note="أحب ضحكتك، ودلالك، وطيبة قلبك، وحتى التفاصيل التي تظنين أنها صغيرة. أحبك أنتِ، بكل ما فيكِ."><span class="emoji">🌺</span><strong>تفاصيلك</strong><small>سرّ صغير لكِ</small></button>
+   </div>
+   <div class="note" id="flowerNote" role="status" aria-live="polite"></div>
+  </section>
+
+  <section class="section">
+   <div class="eyebrow">وعد منّي لكِ</div>
+   <h2>الحب الذي أريدك أن تشعري به</h2>
+   <p class="lead">لا أريد أن يكون حبي مجرد كلام جميل تقرئينه؛ أريدك أن تلمسيه في الأيام العادية أيضًا.</p>
+   <div class="promise-list">
+    <div class="promise"><span>♡</span><div>سأحاول أن أكون حاضرًا معك فعلًا عندما نتحدث، وأن أمنحك انتباهي لا مجرد مكالمة.</div></div>
+    <div class="promise"><span>♡</span><div>إذا عرفت أنني سأنشغل، سأخبرك بدل أن أتركك تنتظرين وتتساءلين.</div></div>
+    <div class="promise"><span>♡</span><div>سأسمع عتابك وأحترم مشاعرك، ولن أجعلك تشعرين أن احتياجك للاهتمام عبء عليّ.</div></div>
+    <div class="promise"><span>♡</span><div>وسأترك لأفعالي فرصة أن تثبت لكِ كل يوم أنكِ محبوبة وغالية.</div></div>
+   </div>
+  </section>
+
+  <section class="section center" id="letterSection">
+   <div class="eyebrow">رسالة لا تشبه غيرها</div>
+   <h2>هناك كلام خبّأته لكِ في هذا الظرف</h2>
+   <p class="lead">اضغطي على الظرف وافتحي رسالتكِ.</p>
+   <div class="envelope-area">
+    <button class="envelope" id="envelope" type="button" aria-label="افتحي رسالة الحب">
+     <div class="env-back"></div><div class="env-front"></div><div class="env-flap"></div><div class="seal">❤️</div>
+    </button>
+   </div>
+   <article class="letter" id="letter">
+يا كوثر، يا روحي وحبيبتي،
+
+أريدك أن تعرفي أنني أحبك من قلبي، وأن وجودك في حياتي ليس شيئًا عاديًا عندي. أفرح برسائلك، وأشتاق لصوتك، وأحب أن أحكي لك عن يومي وأسمع منك عن يومك، حتى أبسط التفاصيل تسعدني لأنها منك أنتِ.
+
+وأنا آسف لأنني في بعض الأوقات لم أعطك الوقت والانتباه اللذين تستحقينهما. لا أريد أن أبرر تقصيري، ولا أن أقلّل من زعلك. أفهم أنك تشتاقين لي، وأنك تريدين أن تشعري أنني حاضر معك، وهذا حقك.
+
+لكن أرجوك لا تجعلي لحظات انشغالي تقول لك إنك أقل حبًا أو أقل أهمية عندي. حبي لك لم يتغير، ومكانتك في قلبي ليست مرتبطة بعدد المكالمات. ومع ذلك، أعرف أن عليكِ أن تشعري بهذا الحب في أفعالي، ولهذا أريد أن أكون أكثر انتباهًا وحرصًا على وقتنا معًا.
+
+أريدك أن تكوني مرتاحة معي؛ تحكين لي ما يضايقك، وتعاتبينني عندما أقصّر، وتعرفين أنني سأحاول أن أفهمك لا أن أجادلك. مشاعرك غالية عليّ، وابتسامتك تهمني، ورضاك يسعدني.
+
+أنا لا أطلب منك أن تنسي زعلك بسرعة، ولا أن تتظاهري بأن كل شيء بخير. فقط أريدك أن تعرفي أنك محبوبة، وأنني أختارك بقلبي، وأنني أريد أن أتعلم كيف أحبك بالطريقة التي تشعرك بالأمان والاهتمام.
+
+أحبك يا أميرتي، وأتمنى أن تكون أيامك خفيفة على قلبك، مليئة بالفرح والطمأنينة. وإذا كنت بجانبك الآن، لضممتك طويلًا وقلت لك: أنتِ غالية عليّ أكثر مما تعرفين.
+
+من قلب يحبك…
+عبدالرحمن ❤️
+    <div class="signature">عبدالرحمن البدشي ♡</div>
+   </article>
+  </section>
+
+  <section class="section center">
+   <div class="eyebrow">وقبل أن تغلقي الصفحة…</div>
+   <span class="final-heart">💗</span>
+   <h2>ابتسمي يا كوثر</h2>
+   <p class="lead">ليس لأن كل شيء يجب أن يكون مثاليًا، بل لأنك تستحقين أيامًا جميلة وقلبًا مطمئنًا. أتمنى أن أكون سببًا في بعض هذا الجمال.</p>
+   <button class="btn" id="hugBtn" type="button">اضغطي هنا لتحصلي على حضن كبير 🫂</button>
+   <p class="hint" id="hugMessage" aria-live="polite"></p>
+  </section>
+ </main>
+ <footer class="footer">صُنعت بكل الحب لكِ وحدكِ · كوثر ♡ عبدالرحمن</footer>
+</div>
+<div class="toast" id="toast">وصلتك بوسة من عبدالرحمن 😘</div>
+<script>
+(()=> {
+ const $=s=>document.querySelector(s);
+ // Stars and gentle falling petals
+ const stars=$('#stars'), petals=$('#petals');
+ for(let i=0;i<65;i++){const e=document.createElement('i');e.className='star';e.style.left=Math.random()*100+'%';e.style.top=Math.random()*100+'%';e.style.animationDelay=(Math.random()*4)+'s';e.style.opacity=(.2+Math.random()*.65);stars.appendChild(e)}
+ for(let i=0;i<17;i++){const e=document.createElement('i');e.className='petal';e.style.left=Math.random()*100+'%';e.style.animationDuration=(13+Math.random()*15)+'s';e.style.animationDelay=(-Math.random()*25)+'s';e.style.opacity=(.18+Math.random()*.38);petals.appendChild(e)}
+ $('#beginBtn').addEventListener('click',()=>$('#flowers').scrollIntoView({behavior:'smooth'}));
+ document.querySelectorAll('.flower').forEach(b=>b.addEventListener('click',()=>{
+   $('#flowerNote').textContent=b.dataset.note;$('#flowerNote').classList.add('show');
+   document.querySelectorAll('.flower').forEach(x=>x.style.borderColor='');
+   b.style.borderColor='#ffc4d6'; 
+ }));
+ const env=$('#envelope'), letter=$('#letter');
+ env.addEventListener('click',()=>{env.classList.toggle('open');letter.classList.toggle('show');if(letter.classList.contains('show'))setTimeout(()=>letter.scrollIntoView({behavior:'smooth',block:'center'}),180)});
+ $('#hugBtn').addEventListener('click',()=>{
+   $('#hugMessage').textContent='حضن طويل جدًا، وبوسات على جبينك وخدودك… أحبك يا كوثر ❤️';
+   const toast=$('#toast');toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),2600);
+   for(let i=0;i<18;i++){const h=document.createElement('span');h.textContent=['❤️','💗','💕','🌸'][i%4];h.style.cssText=`position:fixed;left:${20+Math.random()*60}%;top:${55+Math.random()*25}%;z-index:9;font-size:${18+Math.random()*22}px;pointer-events:none;animation:floatUp 2.5s ease-out forwards`;document.body.appendChild(h);setTimeout(()=>h.remove(),2600)}
+ });
+ const style=document.createElement('style');style.textContent='@keyframes floatUp{to{transform:translateY(-180px) rotate(25deg);opacity:0}}';document.head.appendChild(style);
+
+ // Original, gentle Web Audio melody. It starts only after her tap; no copyrighted recording.
+ let audioCtx=null, master=null, playing=false, timer=null, step=0;
+ const notes=[523.25,659.25,783.99,659.25,587.33,698.46,880,698.46,523.25,659.25,783.99,1046.5,880,783.99,659.25,587.33];
+ function playNote(freq,when,duration){
+   const osc=audioCtx.createOscillator(), gain=audioCtx.createGain();
+   osc.type='sine';osc.frequency.setValueAtTime(freq,when);
+   gain.gain.setValueAtTime(0,when);gain.gain.linearRampToValueAtTime(.075,when+.08);gain.gain.exponentialRampToValueAtTime(.001,when+duration);
+   osc.connect(gain);gain.connect(master);osc.start(when);osc.stop(when+duration+.03);
+ }
+ function schedule(){
+   if(!playing)return;
+   const now=audioCtx.currentTime;
+   const n=notes[step%notes.length];
+   playNote(n,now,.75);playNote(n/2,now,.95);
+   if(step%4===0)playNote(n*1.5,now,.45);
+   step++;timer=setTimeout(schedule,560);
+ }
+ async function toggleMusic(){
+   if(!audioCtx){const AC=window.AudioContext||window.webkitAudioContext;if(!AC){$('#soundBtn').textContent='الموسيقى غير مدعومة هنا';return}audioCtx=new AC();master=audioCtx.createGain();master.gain.value=.45;master.connect(audioCtx.destination)}
+   if(audioCtx.state==='suspended')await audioCtx.resume();
+   playing=!playing;
+   if(playing){schedule();$('#soundBtn').textContent='♫ أوقفي الموسيقى';$('#soundBtn').setAttribute('aria-pressed','true')}
+   else{clearTimeout(timer);master.gain.setTargetAtTime(0,audioCtx.currentTime,.08);setTimeout(()=>{if(!playing)return;},150);$('#soundBtn').textContent='♫ شغّلي موسيقى هادئة';$('#soundBtn').setAttribute('aria-pressed','false');}
+ }
+ $('#soundBtn').addEventListener('click',async()=>{
+   if(playing){playing=false;clearTimeout(timer);master.gain.setTargetAtTime(0,audioCtx.currentTime,.08);$('#soundBtn').textContent='♫ شغّلي موسيقى هادئة';$('#soundBtn').setAttribute('aria-pressed','false')}
+   else{await toggleMusic();master.gain.setTargetAtTime(.45,audioCtx.currentTime,.3)}
+ });
+})();
+</script>
+</body>
+</html>
